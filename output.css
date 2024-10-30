@@ -587,6 +587,10 @@ video {
   top: -5rem;
 }
 
+.top-28 {
+  top: 7rem;
+}
+
 .z-\[1000\] {
   z-index: 1000;
 }
