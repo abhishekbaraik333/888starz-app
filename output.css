@@ -619,6 +619,10 @@ video {
   aspect-ratio: 9/16;
 }
 
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
 .h-0\.5 {
   height: 0.125rem;
 }
@@ -791,6 +795,11 @@ video {
 .bg-zinc-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(113 113 122 / var(--tw-bg-opacity));
+}
+
+.bg-blue-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
 .p-2 {
