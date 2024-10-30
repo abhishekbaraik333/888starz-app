@@ -6,3 +6,8 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle('active');
 
 });
+
+function toggleToc() {
+  const tocContainer = document.querySelector('.toc-container');
+  tocContainer.classList.toggle('open');
+}

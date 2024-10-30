@@ -26,7 +26,8 @@
 
 
                 <div class="flex lg:hidden justify-end w-full">
-                    <button aria-label="Navigation Opener" id="hamburger" class=" flex flex-col gap-1.5 relative z-[90]">
+                    <button aria-label="Navigation Opener" id="hamburger"
+                        class=" flex flex-col gap-1.5 relative z-[90]">
                         <span class="w-6 h-0.5 bg-white rounded-md active transition-all duration-300"></span>
                         <span class="w-6 h-0.5 bg-white rounded-md transition-all duration-300"></span>
                         <span class="w-6 h-0.5 bg-white rounded-md transition-all duration-300"></span>
@@ -35,12 +36,11 @@
 
             </div>
 
-
-
             <div class="lg:flex hidden px-[5%] items-center justify-between gap-4 py-2 text-primary font-normal">
-                <a href="tel:(513) 659-5728" class="hover:underline uppercase text-[#b47345]">Login</a>
+                <a href="" aria-label="Login to your 888starz Account"
+                    class="hover:underline uppercase text-[#b47345]">Login</a>
 
-                <a href="mailto: julie@quadrivium-advisors.com" class="hover:underline text-[#b47345] uppercase">
+                <a href="" aria-label="Read License of 888starz" class="hover:underline text-[#b47345] uppercase">
                     License</a>
             </div>
 
@@ -48,14 +48,15 @@
             <!-- mobile navbar -->
             <nav id="mobile-nav"
                 class="fixed z-[99] p-4 pt-5 inset-x-0 top-28 md:top-24 h-fit bg-black transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col gap-5 justify-start items-start text-2xl text-[#b47345] lg:text-lg">
-                <a class="hover:scale-[1.1] duration-200 ease text-xl  font-semibold " href="./index.html">Login</a>
-                <a href="#">License</a> 
+                <a aria-label="Login to your 888starz Account"
+                    class="hover:scale-[1.1] duration-200 ease text-xl  font-semibold " href="./index.html">Login</a>
+                <a aria-label="License of 888starz" href="#">License</a>
             </nav>
 
             <div>
                 <!-- desktop navbar -->
                 <nav class="desktop-menu text-white py-5 flex gap-5 items-center justify-between w-full lg:px-20">
-                    <a href=""
+                    <a href="" aria-label=""
                         class="lg:py-3 lg:px-3 py-1 px-5 bg-blue-500 hover:bg-zinc-500 duration-300 text-base lg:text-xl font-semibold uppercase">download
                         app</a>
                     <a href="" class="lg:py-3 px-8 py-1 bg-zinc-500 lg:text-xl font-semibold uppercase">sign up</a>
@@ -76,11 +77,13 @@
                         888starz App Download for APK (Android) & iOS
                     </h1>
                     <p class="hidden lg:block text-white text-xl font-normal mt-8">
-                        The official 888starz app for Bangladeshi players. Download the latest version of the app for all devices. Stay tuned for updates on Android and iPhone versions.
+                        The official 888starz app for Bangladeshi players. Download the latest version of the app for
+                        all devices. Stay tuned for updates on Android and iPhone versions.
                     </p>
                 </div>
                 <div class="hidden lg:flex lg:w-1/2 justify-center">
-                    <img src="./assets/main-mobile-app.webp" class=" p-2 bg-black rounded-3xl lg:w-[170px] lg:h-[320px]" alt="">
+                    <img src="./assets/main-mobile-app.webp" class="p-2 aspect-[9/16] bg-black rounded-3xl lg:w-[170px] lg:h-[320px]"
+                        alt="main mobile app">
                 </div>
             </div>
 
@@ -90,14 +93,25 @@
                 <div class="stars lg:w-1/2 flex items-center gap-2 lg:text-2xl">Rating: 5/5 </div>
 
                 <div class="lg:w-1/2 flex items-center gap-2">
-                    <a href="" aria-label="Download App for Android" class="px-4 py-4 bg-[#4d8065] hover:bg-primary duration-300 text-lg text-center text-white font-bold flex items-center gap-1">
-                        DOWNLOAD 888STARZ APK 
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="20" height="24"><path fill="#000" fill-rule="evenodd" d="M4 18c0 .6.4 1 1 1h1v3.5c0 .8.7 1.5 1.5 1.5S9 23.3 9 22.5V19h2v3.5c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5V19h1c.6 0 1-.4 1-1V8H4v10ZM1.5 8C.7 8 0 8.7 0 9.5v7c0 .8.7 1.5 1.5 1.5S3 17.3 3 16.5v-7C3 8.7 2.3 8 1.5 8Zm17 0c-.8 0-1.5.7-1.5 1.5v7c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5v-7c0-.8-.7-1.5-1.5-1.5Zm-5-5.8L14.8.9c.2-.2.2-.5 0-.7a.5.5 0 0 0-.7 0l-1.5 1.5C11.9 1.2 11 1 10 1a6 6 0 0 0-2.7.6L5.9.1c-.2-.1-.6-.1-.8 0-.1.2-.1.6 0 .8l1.3 1.3A6.1 6.1 0 0 0 4 7h12c0-2-1-3.8-2.5-4.8ZM8 5H7V4h1v1Zm5 0h-1V4h1v1Z"></path></svg>
-                       
+                    <a href="" aria-label="Download App for Android"
+                        class="px-4 py-4 bg-[#4d8065] hover:bg-primary duration-300 text-lg text-center text-white font-bold flex items-center gap-1">
+                        DOWNLOAD 888STARZ APK
+                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="20" height="24">
+                            <path fill="#000" fill-rule="evenodd"
+                                d="M4 18c0 .6.4 1 1 1h1v3.5c0 .8.7 1.5 1.5 1.5S9 23.3 9 22.5V19h2v3.5c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5V19h1c.6 0 1-.4 1-1V8H4v10ZM1.5 8C.7 8 0 8.7 0 9.5v7c0 .8.7 1.5 1.5 1.5S3 17.3 3 16.5v-7C3 8.7 2.3 8 1.5 8Zm17 0c-.8 0-1.5.7-1.5 1.5v7c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5v-7c0-.8-.7-1.5-1.5-1.5Zm-5-5.8L14.8.9c.2-.2.2-.5 0-.7a.5.5 0 0 0-.7 0l-1.5 1.5C11.9 1.2 11 1 10 1a6 6 0 0 0-2.7.6L5.9.1c-.2-.1-.6-.1-.8 0-.1.2-.1.6 0 .8l1.3 1.3A6.1 6.1 0 0 0 4 7h12c0-2-1-3.8-2.5-4.8ZM8 5H7V4h1v1Zm5 0h-1V4h1v1Z">
+                            </path>
+                        </svg>
+
                     </a>
-                    <a href="" aria-label="Download App for IOS" class="px-4 py-4 bg-[#4d8065] hover:bg-primary duration-300 text-lg text-white font-bold flex gap-1 items-center">
+                    <a href="" aria-label="Download App for IOS"
+                        class="px-4 py-4 bg-[#4d8065] hover:bg-primary duration-300 text-lg text-white font-bold flex gap-1 items-center">
                         DOWNLOAD FOR IOS
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 56.7 56.7"><path d="M41.8 30.5c0-6.2 5-9.2 5.3-9.4a11.5 11.5 0 0 0-9-4.8c-3.8-.4-7.5 2.2-9.4 2.2-2 0-5-2.2-8.1-2.1a12 12 0 0 0-10.2 6.2C6 30 9.3 41.2 13.4 47.3c2.2 3 4.6 6.4 7.9 6.3 3-.2 4.3-2 8-2s4.8 2 8.1 2c3.4-.2 5.5-3.1 7.6-6.1 2.3-3.5 3.3-6.9 3.4-7 0 0-6.6-2.5-6.6-10zM35.6 12.2c1.7-2 2.9-5 2.5-7.8A11 11 0 0 0 31 8c-1.6 1.8-3 4.8-2.6 7.6 2.7.2 5.6-1.4 7.3-3.5z"></path></svg>
+                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+                            viewBox="0 0 56.7 56.7">
+                            <path
+                                d="M41.8 30.5c0-6.2 5-9.2 5.3-9.4a11.5 11.5 0 0 0-9-4.8c-3.8-.4-7.5 2.2-9.4 2.2-2 0-5-2.2-8.1-2.1a12 12 0 0 0-10.2 6.2C6 30 9.3 41.2 13.4 47.3c2.2 3 4.6 6.4 7.9 6.3 3-.2 4.3-2 8-2s4.8 2 8.1 2c3.4-.2 5.5-3.1 7.6-6.1 2.3-3.5 3.3-6.9 3.4-7 0 0-6.6-2.5-6.6-10zM35.6 12.2c1.7-2 2.9-5 2.5-7.8A11 11 0 0 0 31 8c-1.6 1.8-3 4.8-2.6 7.6 2.7.2 5.6-1.4 7.3-3.5z">
+                            </path>
+                        </svg>
                     </a>
                 </div>
             </div>
@@ -105,23 +119,86 @@
             <!-- Mobile -->
 
             <div class="lg:hidden bg-white mt-[10rem] flex-col flex items-center">
-                <img src="./assets/main-mobile-app.webp" class="relative p-2 bg-black rounded-3xl -top-[5rem] w-[130px] h-[260px]" alt="">
+                <img src="./assets/main-mobile-app.webp"
+                    class="relative p-2 bg-black rounded-3xl -top-[5rem] w-[130px] h-[260px]" alt="">
 
                 <div class=" flex flex-col items-center gap-2 px-4">
-                    <a href="" aria-label="Download App for Android" class="px-4 py-2 bg-[#4d8065] hover:bg-primary duration-300 text-white font-medium flex gap-1 items-center">
-                        DOWNLOAD 888STARZ APK 
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="20" height="24"><path fill="#000" fill-rule="evenodd" d="M4 18c0 .6.4 1 1 1h1v3.5c0 .8.7 1.5 1.5 1.5S9 23.3 9 22.5V19h2v3.5c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5V19h1c.6 0 1-.4 1-1V8H4v10ZM1.5 8C.7 8 0 8.7 0 9.5v7c0 .8.7 1.5 1.5 1.5S3 17.3 3 16.5v-7C3 8.7 2.3 8 1.5 8Zm17 0c-.8 0-1.5.7-1.5 1.5v7c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5v-7c0-.8-.7-1.5-1.5-1.5Zm-5-5.8L14.8.9c.2-.2.2-.5 0-.7a.5.5 0 0 0-.7 0l-1.5 1.5C11.9 1.2 11 1 10 1a6 6 0 0 0-2.7.6L5.9.1c-.2-.1-.6-.1-.8 0-.1.2-.1.6 0 .8l1.3 1.3A6.1 6.1 0 0 0 4 7h12c0-2-1-3.8-2.5-4.8ZM8 5H7V4h1v1Zm5 0h-1V4h1v1Z"></path></svg>
-                       
+                    <a href="" aria-label="Download App for Android"
+                        class="px-4 py-2 bg-[#4d8065] hover:bg-primary duration-300 text-white font-medium flex gap-1 items-center">
+                        DOWNLOAD 888STARZ APK
+                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="20" height="24">
+                            <path fill="#000" fill-rule="evenodd"
+                                d="M4 18c0 .6.4 1 1 1h1v3.5c0 .8.7 1.5 1.5 1.5S9 23.3 9 22.5V19h2v3.5c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5V19h1c.6 0 1-.4 1-1V8H4v10ZM1.5 8C.7 8 0 8.7 0 9.5v7c0 .8.7 1.5 1.5 1.5S3 17.3 3 16.5v-7C3 8.7 2.3 8 1.5 8Zm17 0c-.8 0-1.5.7-1.5 1.5v7c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5v-7c0-.8-.7-1.5-1.5-1.5Zm-5-5.8L14.8.9c.2-.2.2-.5 0-.7a.5.5 0 0 0-.7 0l-1.5 1.5C11.9 1.2 11 1 10 1a6 6 0 0 0-2.7.6L5.9.1c-.2-.1-.6-.1-.8 0-.1.2-.1.6 0 .8l1.3 1.3A6.1 6.1 0 0 0 4 7h12c0-2-1-3.8-2.5-4.8ZM8 5H7V4h1v1Zm5 0h-1V4h1v1Z">
+                            </path>
+                        </svg>
+
                     </a>
-                    <a href="" aria-label="Download App for IOS" class="px-4 py-2 bg-[#4d8065] hover:bg-primary duration-300 text-white font-medium flex gap-1 items-center">
+                    <a href="" aria-label="Download App for IOS"
+                        class="px-4 py-2 bg-[#4d8065] hover:bg-primary duration-300 text-white font-medium flex gap-1 items-center">
                         DOWNLOAD FOR IOS
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 56.7 56.7"><path d="M41.8 30.5c0-6.2 5-9.2 5.3-9.4a11.5 11.5 0 0 0-9-4.8c-3.8-.4-7.5 2.2-9.4 2.2-2 0-5-2.2-8.1-2.1a12 12 0 0 0-10.2 6.2C6 30 9.3 41.2 13.4 47.3c2.2 3 4.6 6.4 7.9 6.3 3-.2 4.3-2 8-2s4.8 2 8.1 2c3.4-.2 5.5-3.1 7.6-6.1 2.3-3.5 3.3-6.9 3.4-7 0 0-6.6-2.5-6.6-10zM35.6 12.2c1.7-2 2.9-5 2.5-7.8A11 11 0 0 0 31 8c-1.6 1.8-3 4.8-2.6 7.6 2.7.2 5.6-1.4 7.3-3.5z"></path></svg>
+                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+                            viewBox="0 0 56.7 56.7">
+                            <path
+                                d="M41.8 30.5c0-6.2 5-9.2 5.3-9.4a11.5 11.5 0 0 0-9-4.8c-3.8-.4-7.5 2.2-9.4 2.2-2 0-5-2.2-8.1-2.1a12 12 0 0 0-10.2 6.2C6 30 9.3 41.2 13.4 47.3c2.2 3 4.6 6.4 7.9 6.3 3-.2 4.3-2 8-2s4.8 2 8.1 2c3.4-.2 5.5-3.1 7.6-6.1 2.3-3.5 3.3-6.9 3.4-7 0 0-6.6-2.5-6.6-10zM35.6 12.2c1.7-2 2.9-5 2.5-7.8A11 11 0 0 0 31 8c-1.6 1.8-3 4.8-2.6 7.6 2.7.2 5.6-1.4 7.3-3.5z">
+                            </path>
+                        </svg>
                     </a>
                 </div>
 
                 <div class="stars flex items-center gap-2 text-xl mt-5 ">Rating: 5/5 </div>
-                <p class="p-4"> The official 888starz app for Bangladeshi players. Download the latest version of the app for all devices. Stay tuned for updates on Android and iPhone versions.</p>
+                <p class="p-4"> The official 888starz app for Bangladeshi players. Download the latest version of the
+                    app for all devices. Stay tuned for updates on Android and iPhone versions.</p>
             </div>
+        </section>
+
+        <section class="px-[5%] lg:px-[10%]">
+
+            <aside class="toc-container">
+                <div class="toc-heading" onclick="toggleToc()">
+                    <span>Table of Contents</span>
+                    <span class="text-white">▼</span>
+                </div>
+                <div class="toc-content">
+                    <div aria-label="Table of Contents">
+                        <ul>
+                            <li><a href="#888starz-app-overview">App Overview</a></li>
+                            <li><a href="#888starz-mobile-app-advantages">Mobile App Advantages</a></li>
+                            <li><a href="#features-of-888starz-app">Features</a></li>
+                            <li><a href="#888starz-app-mobile-compatibility">Mobile Compatibility</a></li>
+                            <li><a href="#how-to-download-888starz-app-for-android-apk">How to Download App for Android
+                                    (APK)</a></li>
+                            <li><a href="#download-888starz-app-for-ios-iphone-ipad">Download App for iOS (iPhone &
+                                    iPad)</a></li>
+                            <li><a href="#access-your-account-through-888starz-app">Access Your Account</a></li>
+                            <li><a href="#casino-experience-on-the-888starz-app">Casino Experience</a></li>
+                            <li><a href="#888starz-app-vs-mobile-version-website">App vs Mobile Version Website</a></li>
+                            <li><a href="#how-to-bet-at-888starz-app">How to Bet?</a></li>
+                            <li><a href="#how-to-update-the-888starz-app-to-the-latest-version">How to Update the App to
+                                    the Latest Version?</a></li>
+                            <li><a href="#secure-payment-methods-at-888starz-app">Secure Payment Methods</a></li>
+                            <li><a href="#888starz-app-bonuses-and-promotions">Bonuses and Promotions</a></li>
+                            <li><a href="#888starz-app-customer-support-service">Customer Support Service</a></li>
+                            <li><a href="#888starz-app-faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+            <div>
+                <h2 class="">888starz App Download for APK (Android) & iOS
+                </h2>
+                <p>
+                    Users of 888starz Bangladesh can make their betting experience even more convenient and accessible
+                    from anywhere in the country thanks to the operator’s mobile app. The 888starz application is
+                    software for Android and iOS mobile devices that includes the same options and tools as the
+                    bookmaker’s official website. With it, players from Bangladesh will be able to manage their accounts
+                    and transactions, utilise bonuses and promotions, bet on sports and enjoy thousands of casino
+                    activities, regardless of their location.
+                    Download the free 888starz app on your smartphone or tablets and make your betting experience even
+                    more convenient!
+                </p>
+            </div>
+
         </section>
     </main>
 
