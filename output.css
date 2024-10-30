@@ -1202,6 +1202,11 @@ p{
     padding-bottom: 0.75rem;
   }
 
+  .lg\:px-\[20\] {
+    padding-left: 20;
+    padding-right: 20;
+  }
+
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
