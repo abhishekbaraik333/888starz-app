@@ -623,6 +623,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
 }
@@ -702,6 +706,10 @@ video {
 
 .h-\[80vh\] {
   height: 80vh;
+}
+
+.h-\[200px\] {
+  height: 200px;
 }
 
 .w-6 {
@@ -791,6 +799,10 @@ video {
 
 .gap-1 {
   gap: 0.25rem;
+}
+
+.text-nowrap {
+  text-wrap: nowrap;
 }
 
 .rounded-md {
@@ -923,6 +935,11 @@ video {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .pt-5 {
@@ -1143,6 +1160,18 @@ html,body{
     height: 80vh;
   }
 
+  .lg\:h-\[90vh\] {
+    height: 90vh;
+  }
+
+  .lg\:h-\[320px\] {
+    height: 320px;
+  }
+
+  .lg\:h-\[60vh\] {
+    height: 60vh;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -1162,6 +1191,14 @@ html,body{
 
   .lg\:w-\[200px\] {
     width: 200px;
+  }
+
+  .lg\:w-\[160px\] {
+    width: 160px;
+  }
+
+  .lg\:w-\[170px\] {
+    width: 170px;
   }
 
   .lg\:flex-row {
@@ -1210,5 +1247,15 @@ html,body{
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
