@@ -591,6 +591,11 @@ video {
   z-index: 99;
 }
 
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -631,6 +636,10 @@ video {
   height: 260px;
 }
 
+.h-\[2px\] {
+  height: 2px;
+}
+
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
@@ -665,6 +674,10 @@ video {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .place-items-center {
   place-items: center;
 }
@@ -691,6 +704,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .gap-1 {
@@ -803,6 +820,11 @@ video {
   background-color: rgb(113 113 122 / var(--tw-bg-opacity));
 }
 
+.bg-zinc-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -830,6 +852,11 @@ video {
   padding-right: 2rem;
 }
 
+.px-\[10\%\] {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 .px-\[5\%\] {
   padding-left: 5%;
   padding-right: 5%;
@@ -850,6 +877,11 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -865,6 +897,11 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.px-\[20\%\] {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
 .pt-5 {
   padding-top: 1.25rem;
 }
@@ -875,6 +912,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.text-start {
+  text-align: start;
 }
 
 .text-2xl {
@@ -931,14 +972,9 @@ video {
   color: rgb(180 115 69 / var(--tw-text-opacity));
 }
 
-.text-blue-400 {
+.text-blue-600 {
   --tw-text-opacity: 1;
-  color: rgb(96 165 250 / var(--tw-text-opacity));
-}
-
-.text-blue-500 {
-  --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
+  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 .text-primary {
@@ -949,11 +985,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-blue-600 {
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 .transition-all {
@@ -1207,6 +1238,94 @@ ol li::before {
   border: 2px double #545454;
 }
 
+.faq-container {
+  /* max-width: 70%; */
+  margin: 50px auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  background-color: #F5F5F5;
+}
+
+.faq-question {
+  color: #000;
+  width: 100%;
+  padding: 15px;
+  text-align: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 700;
+  transition: max-height 0.5s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.faq-answer {
+  color: #000;
+  opacity: 80%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-answer p {
+  padding: 15px;
+  margin: 0;
+  font-size: 18px;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 800px;
+  /* Adjust as needed */
+  transition: max-height 0.3s ease;
+}
+
+.icon-wrapper {
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-bar {
+  position: absolute;
+  background-color: #000;
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: 3px;
+  min-width: 15px;
+  min-height: 3px;
+}
+
+.horizontal {
+  transform: rotate(0deg);
+  /* Horizontal bar remains unchanged */
+}
+
+.vertical {
+  transform: rotate(90deg);
+  /* Vertical bar to create the '+' */
+}
+
+.faq-item.active .vertical {
+  transform: rotate(0deg);
+  /* Rotate to hide vertical bar */
+}
+
+.payments-type img{
+  width: 85px;
+  aspect-ratio: 16/9;
+}
+
 @media (max-width: 640px) {
   .toc-content ul {
     -moz-column-count: 2;
@@ -1235,6 +1354,14 @@ ol li::before {
 
   .step:last-child::before {
     height: 35%;
+  }
+
+  .faq-question{
+    font-size: 16px;
+  }
+
+  .faq-answer p{
+    font-size: 15px;
   }
 }
 
@@ -1302,6 +1429,10 @@ ol li::before {
     justify-content: center;
   }
 
+  .lg\:justify-between {
+    justify-content: space-between;
+  }
+
   .lg\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -1317,9 +1448,19 @@ ol li::before {
     padding-right: 10%;
   }
 
+  .lg\:px-\[20\%\] {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
   .lg\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+  }
+
+  .lg\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .lg\:text-2xl {
