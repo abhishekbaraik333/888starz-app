@@ -55,7 +55,7 @@ p {
 
 .toc-container {
   width: 100%;
-  background-color: #c4585f;
+  background-color: #c9454e;
   overflow: hidden;
   border-radius: 8px;
   margin-top: 10px;
@@ -64,7 +64,7 @@ p {
 /* Heading styles */
 .toc-heading {
   display: flex;
-  background-color: #c4585f;
+  background-color: #c9454e;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
