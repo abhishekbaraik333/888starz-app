@@ -596,6 +596,23 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -606,6 +623,10 @@ video {
 
 .mt-\[10rem\] {
   margin-top: 10rem;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -640,9 +661,17 @@ video {
   height: 2px;
 }
 
+.h-\[3vh\] {
+  height: 3vh;
+}
+
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-5 {
@@ -655,6 +684,10 @@ video {
 
 .w-\[150px\] {
   width: 150px;
+}
+
+.w-\[4px\] {
+  width: 4px;
 }
 
 .w-full {
@@ -706,10 +739,6 @@ video {
   justify-content: space-between;
 }
 
-.justify-around {
-  justify-content: space-around;
-}
-
 .gap-1 {
   gap: 0.25rem;
 }
@@ -750,6 +779,10 @@ video {
   border-width: 6px;
 }
 
+.border-l-\[4px\] {
+  border-left-width: 4px;
+}
+
 .border-\[\#089E4E\] {
   --tw-border-opacity: 1;
   border-color: rgb(8 158 78 / var(--tw-border-opacity));
@@ -758,6 +791,11 @@ video {
 .border-\[\#FF5151\] {
   --tw-border-opacity: 1;
   border-color: rgb(255 81 81 / var(--tw-border-opacity));
+}
+
+.border-red-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(220 38 38 / var(--tw-border-opacity));
 }
 
 .border-zinc-700 {
@@ -852,11 +890,6 @@ video {
   padding-right: 2rem;
 }
 
-.px-\[10\%\] {
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
 .px-\[5\%\] {
   padding-left: 5%;
   padding-right: 5%;
@@ -877,11 +910,6 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -897,13 +925,12 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.px-\[20\%\] {
-  padding-left: 20%;
-  padding-right: 20%;
-}
-
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.pt-\[7rem\] {
+  padding-top: 7rem;
 }
 
 .pt-\[9rem\] {
@@ -967,6 +994,10 @@ video {
   text-transform: uppercase;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .text-\[\#b47345\] {
   --tw-text-opacity: 1;
   color: rgb(180 115 69 / var(--tw-text-opacity));
@@ -985,6 +1016,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.opacity-80 {
+  opacity: 0.8;
 }
 
 .transition-all {
@@ -1082,16 +1117,19 @@ p {
 /* Content styles (collapsed initially) */
 
 .toc-content {
+  border-bottom-right-radius: 8px;
+  border: 1px solid #c4585f;
   max-height: 0;
   overflow: hidden;
   padding: 0 15px;
-  background-color: #f0f0f0;
+  background-color: #fff;
 }
 
 /* Open state */
 
 .toc-container.open .toc-content {
-  max-height: 400px;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
   /* Adjust based on content length */
   padding: 15px;
 }
@@ -1099,8 +1137,9 @@ p {
 /* List items */
 
 .toc-content ul {
-  -moz-column-count: 3;
-       column-count: 3;
+  /* column-count: 3; */
+  -moz-columns: 300px;
+       columns: 300px;
   padding: 10px;
   list-style-type: none;
 }
@@ -1328,8 +1367,7 @@ ol li::before {
 
 @media (max-width: 640px) {
   .toc-content ul {
-    -moz-column-count: 2;
-         column-count: 2;
+    /* column-count: 2; */
   }
 
   h2 {
@@ -1363,6 +1401,13 @@ ol li::before {
   .faq-answer p{
     font-size: 15px;
   }
+}
+
+/* Login page */
+
+.hero{
+  background: url(./assets/login-background.webp) right no-repeat;
+  background-size: cover;
 }
 
 .hover\:scale-\[1\.1\]:hover {
@@ -1453,14 +1498,14 @@ ol li::before {
     padding-right: 20%;
   }
 
-  .lg\:py-3 {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-  }
-
   .lg\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+
+  .lg\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 
   .lg\:text-2xl {
