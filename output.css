@@ -925,6 +925,10 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .pt-5 {
   padding-top: 1.25rem;
 }
@@ -1016,6 +1020,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 .opacity-80 {
@@ -1410,6 +1419,16 @@ ol li::before {
   background-size: cover;
 }
 
+.license-hero{
+  background: url(./assets/homebackground.jpg) right no-repeat;
+  background-size: cover;
+}
+
+.privacy-hero{
+  background: url(./assets/The-PrivacyPolicy-main.webp) right no-repeat;
+  background-size: cover;
+}
+
 .hover\:scale-\[1\.1\]:hover {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
@@ -1451,6 +1470,10 @@ ol li::before {
 
   .lg\:h-\[320px\] {
     height: 320px;
+  }
+
+  .lg\:h-\[70vh\] {
+    height: 70vh;
   }
 
   .lg\:h-\[80vh\] {

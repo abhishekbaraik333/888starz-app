@@ -353,3 +353,15 @@ ol li::before {
   background-size: cover;
 
 }
+
+.license-hero{
+  background: url(./assets/homebackground.jpg) right no-repeat;
+  background-size: cover;
+
+}
+
+.privacy-hero{
+  background: url(./assets/The-PrivacyPolicy-main.webp) right no-repeat;
+  background-size: cover;
+
+}
