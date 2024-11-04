@@ -808,6 +808,11 @@ video {
   background-color: rgb(8 158 78 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#353638\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(53 54 56 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#37393B\] {
   --tw-bg-opacity: 1;
   background-color: rgb(55 57 59 / var(--tw-bg-opacity));
@@ -1007,6 +1012,11 @@ video {
   color: rgb(180 115 69 / var(--tw-text-opacity));
 }
 
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
 .text-blue-600 {
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
@@ -1020,11 +1030,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-blue-500 {
-  --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 .opacity-80 {
@@ -1199,7 +1204,7 @@ p {
   padding-right: 1rem;
 }
 
-ol{
+ol {
   counter-reset: myCounter;
   /* Initialize the counter */
   position: relative;
@@ -1270,7 +1275,7 @@ ol li::before {
 
 .step__body span {
   color: #545454;
-  background-image: linear-gradient(255deg, #c4585f , #fff);
+  background-image: linear-gradient(255deg, #c4585f, #fff);
   width: 40px;
   height: 40px;
   display: flex;
@@ -1295,7 +1300,7 @@ ol li::before {
 
 .faq-item {
   margin-bottom: 20px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 .faq-question {
@@ -1369,16 +1374,18 @@ ol li::before {
   /* Rotate to hide vertical bar */
 }
 
-.payments-type img{
+.payments-type img {
   width: 85px;
   aspect-ratio: 16/9;
 }
 
-@media (max-width: 640px) {
-  .toc-content ul {
-    /* column-count: 2; */
-  }
+.gaming-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
 
+@media (max-width: 640px) {
   h2 {
     font-size: 24px;
   }
@@ -1391,11 +1398,11 @@ ol li::before {
     font-size: 16px;
   }
 
-  ol li{
+  ol li {
     font-size: 16px;
   }
 
-  .step{
+  .step {
     margin-left: 70px;
   }
 
@@ -1403,28 +1410,31 @@ ol li::before {
     height: 35%;
   }
 
-  .faq-question{
+  .faq-question {
     font-size: 16px;
   }
 
-  .faq-answer p{
+  .faq-answer p {
     font-size: 15px;
+  }
+
+  .gaming-list{
+    grid-template-columns: repeat(1,1fr);
+    padding: 0;
   }
 }
 
-/* Login page */
-
-.hero{
+.hero {
   background: url(./assets/login-background.webp) right no-repeat;
   background-size: cover;
 }
 
-.license-hero{
+.license-hero {
   background: url(./assets/homebackground.jpg) right no-repeat;
   background-size: cover;
 }
 
-.privacy-hero{
+.privacy-hero {
   background: url(./assets/The-PrivacyPolicy-main.webp) right no-repeat;
   background-size: cover;
 }
@@ -1529,6 +1539,16 @@ ol li::before {
   .lg\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+  }
+
+  .lg\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .lg\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .lg\:text-2xl {
