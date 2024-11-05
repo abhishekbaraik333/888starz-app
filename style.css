@@ -32,6 +32,22 @@ body {
   transform: translateX(0);
 }
 
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  z-index: 10;
+  min-width: 80px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a:hover span{
+  color: #ff1e1e;
+}
+
 h2 {
   font-size: 42px;
   font-weight: 700;
@@ -366,3 +382,5 @@ ol li::before {
   background: url(./assets/The-PrivacyPolicy-main.webp) right no-repeat;
   background-size: cover;
 }
+
+
