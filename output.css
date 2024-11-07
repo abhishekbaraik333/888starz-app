@@ -677,10 +677,6 @@ video {
   height: 2px;
 }
 
-.h-\[3vh\] {
-  height: 3vh;
-}
-
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
